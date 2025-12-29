@@ -14,21 +14,21 @@ const Home = () => {
     transition={{ duration: 0.6 }}
     className="w-full">
       {/* Hero Section */}
-      <section
-        className="bg-cover bg-center bg-fixed h-screen flex flex-col justify-center items-center text-center px-4"
+      <section 
+        className="bg-cover bg-top md:bg-center md:bg-fixed h-60 sm:h-80 md:h-screen flex flex-col items-center justify-center text-center px-4"
         style={{ backgroundImage: `url(${hairImg})` }}
       >
         <motion.h1
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }} className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-black drop-shadow-xl">
+        transition={{ duration: 0.8 }} className="text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4 text-black drop-shadow-xl">
           LOOK SHARP. FEEL SHARP.
         </motion.h1>
         <motion.p
         initial={{ opacity: 0, y: 30 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }} 
-        className="mb-6 text-md sm:text-lg md:text-xl lg:text-2xl text-white bg-black rounded-2xl p-2 font-semibold drop-shadow-md">
+        className="mb-6 text-xl sm:text-lg md:text-xl lg:text-2xl text-white bg-black rounded-2xl p-1 sm:p-2 md:p-2 font-semibold drop-shadow-md">
           Your trusted destination for<br />expert cuts, vibrant color, and luxurious treatments.
         </motion.p>
         <motion.div
